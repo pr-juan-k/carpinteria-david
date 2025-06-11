@@ -1,0 +1,6 @@
+AGREGADOS REQUERIDOS:
+
+*chat de contestaciones basicas:
+*cada producto con descripcion y gama de colores disponibles:
+*sistema de cobranza de carrito:
+*inicio secion de solo administrador para cargar productos
