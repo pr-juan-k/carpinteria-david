@@ -1,10 +1,40 @@
-/**
-* Template Name: iPortfolio
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+/* Estilo común para ambos */
+.scroll-top, .whatsapp-button {
+  position: fixed;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 24px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+/* Scroll arriba */
+#scroll-top {
+  bottom: 20px;
+  
+  color: #fff;
+}
+
+#scroll-top:hover {
+  background-color: #212529;
+}
+
+/* WhatsApp arriba del scroll */
+#whatsapp-button {
+  bottom: 74px; /* 20px scroll + 44px altura del botón + 10px de separación */
+  background-color: #25D366;
+  color: white;
+}
+
+#whatsapp-button:hover {
+  background-color: #1ebe5d;
+}
 
 /*--------------------------------------------------------------
 # Font & Color Variables
