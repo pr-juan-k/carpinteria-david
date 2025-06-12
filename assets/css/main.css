@@ -1,3 +1,35 @@
+#carrito-flotante {
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 999;
+}
+
+
+.mb-3{
+  color: #000000;
+}
+
+/* Aplica zoom y sombra al pasar el mouse sobre la tarjeta */
+#productos .col-lg-3 > a > div,
+#productos .col-md-4 > a > div,
+#productos .col-6 > a > div {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+#productos .col-lg-3 > a > div:hover,
+#productos .col-md-4 > a > div:hover,
+#productos .col-6 > a > div:hover,
+#productos .col-lg-3 > a > div:focus,
+#productos .col-md-4 > a > div:focus,
+#productos .col-6 > a > div:focus {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  outline: none;
+}
+
 /* Estilo común para ambos */
 .scroll-top, .whatsapp-button {
   position: fixed;
@@ -115,7 +147,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--heading-color);
+  color: rgb(255, 255, 255);
   font-family: var(--heading-font);
 }
 
@@ -491,6 +523,10 @@ h6 {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+  #carrito-flotante {
+    top: 80px; /* más abajo para no tapar el menú */
+    right: 15px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -535,7 +571,7 @@ h6 {
 section,
 .section {
   color: var(--default-color);
-  background-color: #bec0c1;
+  background-color: #978585;
   padding: 60px 0;
   overflow: clip;
 }

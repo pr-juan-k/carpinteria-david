@@ -97,7 +97,7 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#inicio"><i class="bi bi-house-door navicon"></i> Inicio</a></li>
+        <li><a href="index.html"><i class="bi bi-house-door navicon"></i> Inicio</a></li>
         <li><a href="#productos"><i class="bi bi-box-seam navicon"></i> Productos</a></li>
         <li><a href="#personalizados"><i class="bi bi-rulers navicon"></i> A medida</a></li>
         
@@ -113,16 +113,39 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="inicio" class="hero section dark-background">
+    <section id="producto-destacado" class="section py-5" style="background-color: #f5f5f5; position: relative;">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-6 col-md-8 mb-4 text-center">
+            <img id="producto-imagen" src="assets/img/carpint/mesa2.jpg" class="img-fluid rounded shadow-sm" alt="Silla en color azul">
     
-      <img src="assets/img/carpint/fond5.jpg" alt="" data-aos="fade-in" class="">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Carpinteria David</h2>
-        <p>Diseños: <span class="typed" data-typed-items="Mesas , Sillas">Muebles</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+            <!-- Selectores de color -->
+            <div class="d-flex justify-content-center gap-3 mt-3 flex-wrap">
+              <button class="color-selector btn rounded-circle border" style="background-color: blue; width: 50px; height: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.4); transition: transform 0.3s;" onclick="cambiarImagen('azul')"></button>
+              <button class="color-selector btn rounded-circle border" style="background-color: red; width: 50px; height: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.4); transition: transform 0.3s;" onclick="cambiarImagen('rojo')"></button>
+              <button class="color-selector btn rounded-circle border" style="background-color: green; width: 50px; height: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.4); transition: transform 0.3s;" onclick="cambiarImagen('verde')"></button>
+            </div>
+          </div>
+    
+          <div class="col-lg-6 col-md-10 text-center text-lg-start">
+            <h2 class="mb-3">Silla Clásica Multicolor</h2>
+            <p>
+              Esta silla combina un diseño atemporal con la posibilidad de personalizar el color para adaptarse a cualquier espacio. Fabricada en madera maciza y con acabados resistentes, es ideal tanto para comedores como para oficinas modernas.
+            </p>
+            <h4 class="text-success mb-3">$12.499</h4>
+            <button class="btn btn-dark rounded-pill px-4 py-2" id="boton-agregar-carrito">
+              <i class="bi bi-cart-plus me-2"></i> Agregar al carrito
+            </button>
+          </div>
+        </div>
       </div>
-
-    </section><!-- /Hero Section -->
+    
+      <!-- Botón flotante de carrito en la parte superior derecha -->
+      <button id="carrito-flotante" class="btn btn-dark rounded-circle position-fixed">
+        <i class="bi bi-cart"></i>
+        <span id="contador-carrito" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 12px;">0</span>
+      </button></section>
+    <!-- /Hero Section -->
 
     <!-- About Section -->
     <section id="productos" class="about section" style="background-color: #978585; padding: 40px 0;">
@@ -202,160 +225,7 @@
     </section>
     ><!-- /About Section -->
 
-    <!-- Stats Section -->
-    <section id="personalizados" class="section" style="background-color: #f4f4f4; padding: 60px 0;">
-      <div class="container" data-aos="fade-up">
-        <div class="text-center mb-5">
-          <h2>Pedido de Mueble a Medida</h2>
-          <p>Completá el siguiente formulario para solicitar un mueble personalizado a tu gusto.</p>
-        </div>
-    
-        <form class="row g-3 justify-content-center" action="enviar-formulario.php" method="POST">
-          
-          <!-- Nombre -->
-          <div class="col-md-6">
-            <label for="nombre" class="form-label">Nombre completo</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" required>
-          </div>
-    
-          <!-- Correo -->
-          <div class="col-md-6">
-            <label for="email" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="email" name="email" required>
-          </div>
-    
-          <!-- Categoría -->
-          <div class="col-md-4">
-            <label for="categoria" class="form-label">Categoría</label>
-            <select class="form-select" id="categoria" name="categoria" required>
-              <option value="">Elegir...</option>
-              <option value="mesa">Mesa</option>
-              <option value="silla">Silla</option>
-              <option value="ropero">Ropero</option>
-              <option value="estanteria">Estantería</option>
-              <option value="otro">Otro</option>
-            </select>
-          </div>
-    
-          <!-- Altura -->
-          <div class="col-md-3">
-            <label for="altura" class="form-label">Altura</label>
-            <input type="number" class="form-control" id="altura" name="altura" placeholder="Ej: 90" required>
-          </div>
-    
-          <!-- Ancho -->
-          <div class="col-md-3">
-            <label for="ancho" class="form-label">Ancho</label>
-            <input type="number" class="form-control" id="ancho" name="ancho" placeholder="Ej: 60" required>
-          </div>
-    
-          <!-- Unidades -->
-          <div class="col-md-2">
-            <label for="cantidad" class="form-label">Cantidad</label>
-            <input type="number" class="form-control" id="cantidad" name="cantidad" min="1" placeholder="Ej: 2" required>
-          </div>
-    
-          <!-- Descripción -->
-          <div class="col-12">
-            <label for="comentarios" class="form-label">Descripción o idea del mueble</label>
-            <textarea class="form-control" id="comentarios" name="comentarios" rows="4" placeholder="Ej: Quiero una estantería estilo rústico de 3 niveles..." required></textarea>
-          </div>
-    
-          <!-- Botón de envío -->
-          <div class="col-12 text-center">
-            <button type="submit" class="btn btn-dark rounded-pill px-4 py-2" style="transition: 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-              Enviar pedido
-            </button>
-          </div>
-        </form>
-      </div>
-    </section><!-- /Stats Section -->
-
-   
-    <!-- Resume Section -->
-    <section id="sobrenosotros" class="resume section py-5" style="background-color: #978585;">
-      <div class="container" data-aos="fade-up">
-    
-        <!-- Título de sección -->
-        <div class="section-title text-center mb-5">
-          <h2>Sobre Nosotros</h2>
-          <p>Con más de una década de experiencia, diseñamos y fabricamos muebles personalizados que combinan funcionalidad, estilo y durabilidad.</p>
-        </div>
-    
-        <div class="row align-items-center gy-4">
-    
-          <!-- Imagen representativa -->
-          <div class="col-lg-5 text-center" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/my-profile-img.jpg" class="img-fluid rounded shadow-sm" alt="Equipo de trabajo">
-          </div>
-    
-          <!-- Descripción institucional -->
-          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
-            <h3 class="mb-3">Más de 12 años creando calidad a medida</h3>
-            <p class="mb-4">
-              Somos una empresa especializada en la fabricación de muebles a medida, combinando diseño artesanal con tecnología de precisión.
-              Nuestro equipo de profesionales cuenta con más de <strong>12 años de trayectoria</strong> en el rubro del mobiliario personalizado.
-            </p>
-    
-            <ul class="list-unstyled">
-              <li><i class="bi bi-check-circle text-success me-2"></i> Más de <strong>500 proyectos únicos</strong> entregados.</li>
-              <li><i class="bi bi-check-circle text-success me-2"></i> Presencia en <strong>locales, hogares y oficinas</strong>.</li>
-              <li><i class="bi bi-check-circle text-success me-2"></i> <strong>Asesoramiento personalizado</strong> para cada cliente.</li>
-              <li><i class="bi bi-check-circle text-success me-2"></i> Uso de <strong>materiales premium</strong> y sustentables.</li>
-              <li><i class="bi bi-check-circle text-success me-2"></i> Taller y showroom propios.</li>
-            </ul>
-    
-            <p class="mt-4">Nuestro compromiso es acompañarte en cada paso del diseño de tu mueble ideal, desde la idea hasta la instalación final. Eleginos por nuestra calidad, experiencia y responsabilidad.</p>
-    
-            <a href="#contacto" class="btn btn-dark mt-3 rounded-pill px-4 py-2">Contactanos</a>
-          </div>
-    
-        </div>
-    
-        <!-- Bloque de contacto con mapa y redes -->
-        <div class="row mt-5">
-          <div class="col-lg-6">
-            <div class="info-wrap">
-    
-              <!-- Dirección -->
-              <div class="info-item d-flex mb-4" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0 fs-4 me-3 text-dark"></i>
-                <div>
-                  <h5 class="mb-1">Dirección</h5>
-                  <p>A108 Adam Street, New York, NY 535022</p>
-                </div>
-              </div>
-    
-              <!-- Facebook -->
-              <div class="info-item d-flex mb-4" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-facebook flex-shrink-0 fs-4 me-3 text-primary"></i>
-                <div>
-                  <h5 class="mb-1">Facebook</h5>
-                  <p><a href="https://www.facebook.com/" target="_blank" class="text-decoration-none text-dark">Visitanos en Facebook</a></p>
-                </div>
-              </div>
-    
-              <!-- Instagram -->
-              <div class="info-item d-flex mb-4" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-instagram flex-shrink-0 fs-4 me-3 text-danger"></i>
-                <div>
-                  <h5 class="mb-1">Instagram</h5>
-                  <p><a href="https://www.instagram.com/" target="_blank" class="text-decoration-none text-dark">Seguinos en Instagram</a></p>
-                </div>
-              </div>
-    
-            </div>
-          </div>
-    
-          <!-- Mapa -->
-          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="500">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-    
-      </div>
-    </section><!-- /Resume Section -->
-
+  
     <!-- Portfolio Section -->
     <section id="carrito" class="section bg-light py-5">
       <div class="container" data-aos="fade-up">
@@ -383,8 +253,8 @@
     
               <!-- Producto 1 -->
               <tr>
-                <td><img src="assets/img/carpint/mesa1.jpg" alt="" width="80"></td>
-                <td>Meza ratonera</td>
+                <td><img src="assets/img/carpint/mesa3.jpg" alt="" width="80"></td>
+                <td>Mesa ratonera</td>
                 <td>$2500</td>
                 <td><input type="number" class="form-control text-center" value="1" min="1" style="width: 70px;"></td>
                 <td>$2500</td>
@@ -403,7 +273,7 @@
     
               <!-- Producto 3 -->
               <tr>
-                <td><img src="assets/img/carpint/mesa1.jpg" alt="" width="80"></td>
+                <td><img src="assets/img/carpint/silla4.jpg" alt="" width="80"></td>
                 <td>Mesa de luz</td>
                 <td>$1800</td>
                 <td><input type="number" class="form-control text-center" value="1" min="1" style="width: 70px;"></td>
@@ -438,31 +308,7 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
     
         <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 1
-                }
-              }
-            }
-          </script>
+          
           <div class="swiper-wrapper">
     
             <div class="swiper-slide">
