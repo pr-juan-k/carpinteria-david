@@ -1,3 +1,4 @@
+
 function cambiarImagen(color) {
   const imagen = document.getElementById('producto-imagen');
   const rutas = {

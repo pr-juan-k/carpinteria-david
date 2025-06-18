@@ -5,6 +5,9 @@
   height: 60px;
   z-index: 999;
 }
+.carri{
+  background-color: #25D366;
+}
 
 
 .mb-3{
@@ -580,7 +583,7 @@ section,
 # Global Section Titles
 --------------------------------------------------------------*/
 .section-title {
-  padding-bottom: 60px;
+  padding-bottom: 10px;
   position: relative;
 }
 
