@@ -1,0 +1,4 @@
+68523b5180d28;Mesa 1;mesa ratonera;dormitorio1;28000;Mesa1_1.jpg;Mesa1_2.jpg;Mesa1_3.jpg
+68523b51c0744;Mesa 2;mesa ratonera 2;salon2;10023;Mesa1_1.jpg;Mesa1_2.jpg;Mesa1_3.jpg
+68523bac8c472;Mesa 3;mesa ratonera 3;salón;12000;Mesa3_1.jpg;Mesa3_2.jpg;Mesa3_3.jpg
+68524a30ca3e2;aaa;adsaxd;dormitorio;2323;aaa_1.png;aaa_2.png;aaa_3.png

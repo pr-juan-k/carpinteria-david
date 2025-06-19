@@ -1,14 +1,4 @@
 
-function cambiarImagen(color) {
-  const imagen = document.getElementById('producto-imagen');
-  const rutas = {
-    azul: 'assets/img/carpint/silla1.jpg', // Esta imagen debe estar al mismo nivel que este archivo .js
-    rojo: 'assets/img/carpint/mesaluz3.jpg',
-    verde: 'assets/img/carpint/mesa2.jpg'
-  };
-  imagen.src = rutas[color];
-  imagen.alt = `Silla en color ${color}`;
-}
 /**
 * Template Name: iPortfolio
 * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/

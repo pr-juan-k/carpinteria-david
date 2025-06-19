@@ -99,10 +99,10 @@
       <ul>
         <li><a href="#inicio"><i class="bi bi-house-door navicon"></i> Inicio</a></li>
         <li><a href="#productos"><i class="bi bi-box-seam navicon"></i> Productos</a></li>
-        <li><a href="#personalizados"><i class="bi bi-rulers navicon"></i> A medida</a></li>
+
         
         <li><a href="#sobrenosotros"><i class="bi bi-people navicon"></i> Sobre nosotros</a></li>
-        <li><a href="carrito.html"><i class="bi bi-cart navicon"></i> Carrito</a></li>
+        <li><a href="carrito.php"><i class="bi bi-cart navicon"></i> Carrito</a></li>
         <li><a href="#testimonials"><i class="bi bi-chat-left-quote navicon"></i> Testimonios</a></li>
         <li><a href="#comentario"><i class="bi bi-pencil-square navicon"></i> Déjanos un comentario</a></li>
       </ul>
@@ -112,7 +112,7 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
+    <!-- Section inicio-->
     <section id="inicio" class="hero section dark-background">
     
       <img src="assets/img/carpint/fond5.jpg" alt="" data-aos="fade-in" class="">
@@ -122,158 +122,90 @@
         <p>Diseños: <span class="typed" data-typed-items="Mesas , Sillas">Muebles</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
-    </section><!-- /Hero Section -->
+    </section>
+    <!-- /Hero Section -->
 
-    <!-- About Section -->
+    <!-- Sesion Productosn -->
     <section id="productos" class="about section" style="background-color: #978585; padding: 40px 0;">
       <div class="container" data-aos="fade-up">
         <div class="row justify-content-center gy-4">
-    
-          <!-- Producto 1 -->
-          <div class="col-6 col-md-4 col-lg-3 d-flex">
-            <a href="producos.html" class="w-100 text-decoration-none text-white">
-              <div class="h-100 d-flex flex-column justify-content-between" style="background-color: #222; border-radius: 8px; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.5); transition: transform 0.2s;">
-                <img src="assets/img/carpint/mesa1.jpg" class="img-fluid" alt="Producto 1">
-                <div style="padding: 15px;" class="d-flex flex-column h-100">
-                  <h3 style="margin: 0; font-size: 16px;">Silla Clásica de Madera</h3>
-                  <p style="margin-top: 8px; color: #ccc;">Silla artesanal con diseño ergonómico.</p>
-                  <p style="color: #4caf50; font-weight: bold;">$14.990</p>
-                  <button class="btn btn-success mt-auto" style="font-size: 14px;">
-                    <i class="bi bi-cart"></i> Comprar
-                  </button>
-                </div>
-              </div>
-            </a>
-          </div>
-    
-          <!-- Producto 2 -->
-          <div class="col-6 col-md-4 col-lg-3 d-flex">
-            <a href="producos.html" class="w-100 text-decoration-none text-white">
-              <div class="h-100 d-flex flex-column justify-content-between" style="background-color: #222; border-radius: 8px; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.5); transition: transform 0.2s;">
-                <img src="assets/img/carpint/silla4.jpg" class="img-fluid" alt="Producto 2">
-                <div style="padding: 15px;" class="d-flex flex-column h-100">
-                  <h3 style="margin: 0; font-size: 16px;">Silla Moderna</h3>
-                  <p style="margin-top: 8px; color: #ccc;">Diseño limpio y elegante.</p>
-                  <p style="color: #4caf50; font-weight: bold;">$12.500</p>
-                  <button class="btn btn-success mt-auto" style="font-size: 14px;">
-                    <i class="bi bi-cart"></i> Comprar
-                  </button>
-                </div>
-              </div>
-            </a>
-          </div>
-    
-          <!-- Producto 3 -->
-          <div class="col-6 col-md-4 col-lg-3 d-flex">
-            <a href="producos.html" class="w-100 text-decoration-none text-white">
-              <div class="h-100 d-flex flex-column justify-content-between" style="background-color: #222; border-radius: 8px; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.5); transition: transform 0.2s;">
-                <img src="assets/img/carpint/silla1.jpg" class="img-fluid" alt="Producto 3">
-                <div style="padding: 15px;" class="d-flex flex-column h-100">
-                  <h3 style="margin: 0; font-size: 16px;">Silla Vintage</h3>
-                  <p style="margin-top: 8px; color: #ccc;">Estilo retro con gran confort.</p>
-                  <p style="color: #4caf50; font-weight: bold;">$16.300</p>
-                  <button class="btn btn-success mt-auto" style="font-size: 14px;">
-                    <i class="bi bi-cart"></i> Comprar
-                  </button>
-                </div>
-              </div>
-            </a>
-          </div>
-    
-          <!-- Producto 4 -->
-          <div class="col-6 col-md-4 col-lg-3 d-flex">
-            <a href="producos.html" class="w-100 text-decoration-none text-white">
-              <div class="h-100 d-flex flex-column justify-content-between" style="background-color: #222; border-radius: 8px; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.5); transition: transform 0.2s;">
-                <img src="assets/img/carpint/mesaluz2.jpg" class="img-fluid" alt="Producto 4">
-                <div style="padding: 15px;" class="d-flex flex-column h-100">
-                  <h3 style="margin: 0; font-size: 16px;">Silla Minimalista</h3>
-                  <p style="margin-top: 8px; color: #ccc;">Diseño simple y funcional.</p>
-                  <p style="color: #4caf50; font-weight: bold;">$13.700</p>
-                  <button class="btn btn-success mt-auto" style="font-size: 14px;">
-                    <i class="bi bi-cart"></i> Comprar
-                  </button>
-                </div>
-              </div>
-            </a>
-          </div>
-    
+
+            <?php
+            // --- CONFIGURACIÓN DE RUTAS ---
+            // Ruta del archivo TXT de productos (ajusta si es necesario)
+            // Si este archivo PHP está en 'php/' y 'txt/juegos.txt' está en la raíz del proyecto
+            $ruta_txt = 'user/cargarP/txt/juegos.txt'; 
+            
+            // Carpeta donde se guardan las portadas de las imágenes (ajusta si es necesario)
+            // Si este archivo PHP está en 'php/' y 'portadas/' está en la raíz del proyecto
+            $ruta_portadas = 'user/cargarP/portadas/'; 
+            
+            // --- LECTURA DEL ARCHIVO TXT ---
+            $productos = [];
+            if (file_exists($ruta_txt) && is_readable($ruta_txt)) {
+                $lineas = file($ruta_txt, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+                foreach ($lineas as $linea) {
+                    $datos = explode(';', $linea);
+                    // Asegurarse de que la línea tiene suficientes datos (ID + 7 datos = 8 campos)
+                    if (count($datos) >= 8) {
+                        $productos[] = [
+                            'id' => $datos[0],
+                            'titulo' => htmlspecialchars($datos[1]),
+                            'descripcion' => htmlspecialchars($datos[2]),
+                            'categoria' => htmlspecialchars($datos[3]),
+                            'precio' => htmlspecialchars($datos[4]),
+                            'foto1' => htmlspecialchars($datos[5]),
+                            'foto2' => htmlspecialchars($datos[6]),
+                            'foto3' => htmlspecialchars($datos[7])
+                        ];
+                    }
+                }
+            } else {
+                echo '<div class="col-12 text-center text-white"><p>No se encontraron productos o el archivo no se pudo leer.</p></div>';
+            }
+
+            // --- GENERACIÓN DINÁMICA DE PRODUCTOS ---
+            if (!empty($productos)) {
+                foreach ($productos as $producto) {
+                    // Construye la URL de la primera foto. Si no hay foto, usa una por defecto.
+                    $url_foto_principal = !empty($producto['foto1']) ? $ruta_portadas . $producto['foto1'] : 'assets/img/placeholder.jpg'; // Asegúrate de tener una imagen de placeholder si no hay foto.
+
+                    // Formatea el precio a moneda argentina (pesos)
+                    $precio_formateado = '$' . number_format($producto['precio'], 0, ',', '.'); // Sin decimales para pesos si el precio es entero
+                    // Si el precio puede tener decimales, usa: number_format($producto['precio'], 2, ',', '.')
+
+                    ?>
+                    <div class="col-6 col-md-4 col-lg-3 d-flex">
+                    <a href="producos.php?id=<?php echo $producto['id']; ?>" class="w-100 text-decoration-none text-white">
+                            <div class="h-100 d-flex flex-column justify-content-between" style="background-color: #222; border-radius: 8px; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.5); transition: transform 0.2s;">
+                                <img src="<?php echo $url_foto_principal; ?>" class="img-fluid" alt="<?php echo $producto['titulo']; ?>">
+                                <div style="padding: 15px;" class="d-flex flex-column h-100">
+                                    <h3 style="margin: 0; font-size: 16px;"><?php echo $producto['titulo']; ?></h3>
+                                    <p style="margin-top: 8px; color: #ccc;"><?php echo $producto['descripcion']; ?></p>
+                                    <p style="color: #4caf50; font-weight: bold;"><?php echo $precio_formateado; ?></p>
+                                    <button class="btn btn-success mt-auto" style="font-size: 14px;">
+                                        <i class="bi bi-cart"></i> Comprar
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <?php
+                }
+            } else {
+                echo '<div class="col-12 text-center text-white"><p>No se pudieron cargar los productos.</p></div>';
+            }
+            ?>
+
         </div>
       </div>
     </section>
-    <!-- /About Section -->
-
-    <!-- Stats Section -->
-    <section id="personalizados" class="section" style="background-color: #bf9a9a; padding: 60px 0;">
-      <div class="container" data-aos="fade-up">
-        <div class="text-center mb-5">
-          <h2>Pedido de Mueble a Medida / Respuesta directa</h2>
-          <p>Completá el siguiente formulario para solicitar un mueble personalizado a tu gusto.</p>
-        </div>
-    
-        <form class="row g-3 justify-content-center" action="enviar-formulario.php" method="POST">
-          
-          <!-- Nombre -->
-          <div class="col-md-6">
-            <label for="nombre" class="form-label">Nombre completo</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" required>
-          </div>
-    
-          <!-- Correo -->
-          <div class="col-md-6">
-            <label for="numero" class="form-label">whatsapp</label>
-            <input type="tel" class="form-control" id="numero" name="numero" required>
-            
-          </div>
-    
-          <!-- Categoría -->
-          <div class="col-md-4">
-            <label for="categoria" class="form-label">Categoría</label>
-            <select class="form-select" id="categoria" name="categoria" required>
-              <option value="">Elegir...</option>
-              <option value="mesa">Mesa</option>
-              <option value="silla">Silla</option>
-              <option value="ropero">Ropero</option>
-              <option value="estanteria">Estantería</option>
-              <option value="otro">Otro</option>
-            </select>
-          </div>
-    
-          <!-- Altura -->
-          <div class="col-md-3">
-            <label for="altura" class="form-label">Altura</label>
-            <input type="number" class="form-control" id="altura" name="altura" placeholder="Ej: 90" required>
-          </div>
-    
-          <!-- Ancho -->
-          <div class="col-md-3">
-            <label for="ancho" class="form-label">Ancho</label>
-            <input type="number" class="form-control" id="ancho" name="ancho" placeholder="Ej: 60" required>
-          </div>
-    
-          <!-- Unidades -->
-          <div class="col-md-2">
-            <label for="cantidad" class="form-label">Cantidad</label>
-            <input type="number" class="form-control" id="cantidad" name="cantidad" min="1" placeholder="Ej: 2" required>
-          </div>
-    
-          <!-- Descripción -->
-          <div class="col-12">
-            <label for="comentarios" class="form-label">Descripción o idea del mueble</label>
-            <textarea class="form-control" id="comentarios" name="comentarios" rows="4" placeholder="Ej: Quiero una estantería estilo rústico de 3 niveles..." required></textarea>
-          </div>
-    
-          <!-- Botón de envío -->
-          <div class="col-12 text-center">
-            <button type="submit" class="btn btn-dark rounded-pill px-4 py-2" style="transition: 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-              Enviar pedido
-            </button>
-          </div>
-        </form>
-      </div>
-    </section><!-- /Stats Section -->
+    <!-- Sesion Producto -->
 
    
-    <!-- Resume Section -->
+
+   
+    <!-- sobrenosotros-->
     <section id="sobrenosotros" class="resume section py-5" style="background-color: #978585;">
       <div class="container" data-aos="fade-up">
     
@@ -308,7 +240,7 @@
     
             <p class="mt-4">Nuestro compromiso es acompañarte en cada paso del diseño de tu mueble ideal, desde la idea hasta la instalación final. Eleginos por nuestra calidad, experiencia y responsabilidad.</p>
     
-            <a href="#contacto" class="btn btn-dark mt-3 rounded-pill px-4 py-2">Contactanos</a>
+            <a href="https://wa.me/5493813489238" class="btn btn-dark mt-3 rounded-pill px-4 py-2">Contactanos</a>
           </div>
     
         </div>
@@ -364,10 +296,10 @@
           
     
       </div>
-    </section><!-- /Resume Section -->
+    </section>
+    <!-- /sobrenosotros -->
 
-    <!-- Portfolio Section -->
-    <!-- /Portfolio Section -->
+   
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section light-background">
@@ -482,17 +414,17 @@
     
     </section><!-- /Testimonials Section -->
 
-    <!-- Contact Section -->
-    <section id="comentario" class="contact section">
+    <!-- comentario -->
+  <section id="comentario" class="contact section">
 
-  <!-- Título de la sección -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Dejá tu Comentario</h2>
-    <p>¿Qué te pareció nuestra página? Tu opinión nos ayuda a mejorar.</p>
-  </div><!-- End Section Title -->
+    <!-- Título de la sección -->
+        <div class="container section-title" data-aos="fade-up">
+        <h2>Dejá tu Comentario</h2>
+        <p>¿Qué te pareció nuestra página? Tu opinión nos ayuda a mejorar.</p>
+        </div><!-- End Section Title -->
 
 
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
 
     <div class="row gy-4 justify-content-center">
 
@@ -527,11 +459,12 @@
             </form>
         </div></div>
 
-</div>
+    </div>
 
-</section><!-- /Contact Section -->
+  </section>
+    <!-- /comentario -->
 
-  </main>
+</main>
 
   <footer id="footer" class="footer position-relative light-background">
 
@@ -551,7 +484,7 @@
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <!-- Botón WhatsApp -->
   <a href="https://wa.me/5493813489238" target="_blank" id="whatsapp-button" class="whatsapp-button d-flex align-items-center justify-content-center">
-<i class="bi bi-whatsapp"></i></a>
+  <i class="bi bi-whatsapp"></i></a>
   <!-- Preloader -->
   <div id="preloader"></div>
 
